@@ -1,0 +1,6 @@
+filename,path,language,text
+utt_1.wav,tts_out_en/utt_1.wav,en,"Hello, this is our demo."
+utt_2.wav,tts_out_en/utt_2.wav,en,How are you today?
+utt_3.wav,tts_out_en/utt_3.wav,en,this system converts text to speech.
+utt_4.wav,tts_out_en/utt_4.wav,en,we are testing the English model.
+utt_single.wav,tts_out_en/utt_single.wav,en,"Hello, this is our demo."

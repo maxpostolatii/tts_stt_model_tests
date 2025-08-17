@@ -1,0 +1,22 @@
+echo "
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Cache
+*.log
+*.tmp
+.cache/
+" > .gitignore
