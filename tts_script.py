@@ -1,12 +1,8 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import argparse
 import csv
 import subprocess
 from pathlib import Path
 
-# -------- Backends --------
 def tts_en_coqui(text: str, out_path: Path, model_name: str = "tts_models/en/ljspeech/tacotron2-DDC"):
     from TTS.api import TTS
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -27,8 +23,6 @@ def tts_uk_espeak(text: str, out_path: Path, voice: str = "uk", rate: int = 170,
     res = subprocess.run(cmd, capture_output=True)
     if res.returncode != 0:
         raise RuntimeError(f"espeak-ng failed (exit {res.returncode})\nSTDERR:\n{res.stderr.decode(errors='replace')}")
-
-# --------------------------
 
 def main():
     p = argparse.ArgumentParser(description="TTS: EN via Coqui / UA via eSpeak-NG (robust)")

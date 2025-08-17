@@ -1,17 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Speech-to-Text (STT) with Whisper
-
-Features:
-- Single .wav (--audio_file)
-- Folder of .wav (--audio_dir) -> CSV (--output_csv)
-
-Install:
-  python3 -m pip install --upgrade pip
-  pip install openai-whisper torch pandas soundfile
-"""
-
 import argparse
 from pathlib import Path
 from typing import List, Dict, Optional
